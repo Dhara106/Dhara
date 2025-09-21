@@ -33,6 +33,6 @@
             </ul>
             <li>Item Three</li>
         </ol></p>
-        <p> 2025 My First HTML Page</p>
+        <p><footer>&copy; 2025 My First HTML Page</footer></p>
     </body>
 </html>
