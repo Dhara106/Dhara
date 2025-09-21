@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task 4 Design Page using tags </title>
+    </head>
+    <body style="background-color: lightblue;">
+        <center><h1><span style="color:red">Food Order System</span></h1></center>
+        <p align="right">... choose your Meal</p>
+        <p><b><h6>Note: Use pre tag to display text.</h6></b></p>
+        <hr>
+        <p align="right"><img src="food-fiesta.png" height="100" width="160" alt="Image not found"></p>
+        <ol type="a" start="27">
+            <li>Morning breakfast</li>
+            <ul type="circle">
+                <li>Poha</li>
+                <li><span style="color:blue">Drink</span></li>
+                <ol type="I" start="3" reversed>
+                    <li>Milk</li>
+                    <li><span style="color:red">Tea and Coffee</span></li>
+                    <ol type="a" start="1">
+                        <li>Tea</li>
+                        <li>Hot Coffee <sub>2.0</sub></li>
+                        <li><del>Cold Coffee</del></li>
+                        <li><u>Green Tea <sup>Himalyan</sup></u></li>
+                    </ol>
+                    <li>ColdDrink</li>
+                </ol>
+            </ul>
+            <li>Lunch</li>
+            <ul type="none">
+                <li>Dal/Rice</li>                    <li><b>Sabji</b></li>
+                <ol type="A" start="26">
+                    <li><a href="https://www.google.com" target="_blank">Gujarati Sabji</a> <h6>Link must be open in new window</h6></li>
+                    <li>Panjabi sabji</li>
+                </ol>    
+            </ul>
+            <li>Dinner</li>
+            <ol type="1" start="1">
+                <li>Burgers</li>
+                <li><img src="pizza.png" height="100" width="100"></a></li>
+            </ol>
+            <li><mark><b>Comming soon.....</b></mark></li>
+        </ol>
+        <hr>
+        <p>Note: Use <mark>p</mark> tag to display this.</p> 
+    </body>
+</html>
