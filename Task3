@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task 2 </title>
+    </head>
+    <body>
+        <center><h1><b>Community Art Fair</b></h1>
+        <p><i>Join us for a day of creativity an fun!</i></p>
+        <p>Date: <u>October 15,2024</u></p>
+        <p><h1>Location: Community Park</h1></p>
+        <p>Entry Fee: Rs.200<sup>(Children under 5years age free)</sup></p>
+        <hr>
+        <p><h2><b>Activities:</b></h2></p>
+        <p>Art Exhibits <sub>(All ages)</sub>
+        <br>Workshops <sub>(Age 10+)</sub>
+        <br>Live Music <sub>(Family-friendly)</sub></p>
+        <p>We hope to see you there!</p></center>
+    </body>
+</html>
