@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task 2 </title>
+    </head>
+    <body>
+        <h1> TASK-2 Welcome to My Second Page using semantic Tag </h1>
+        <a href="https://www.google.com" target="_blank"> Home </a>
+        |
+        <a href="https://www.google.com" target="_blank"> About </a>
+        |
+        <a href="https://www.google.com" target="_blank"> Contact </a>
+        <p><h2> Home </h2></p>
+        <p>This is the <b>home section</b> of my first semantic HTML page.</p>
+        <p><h2>About</h2></p>
+        <p>Here you will learn about using <i>semantic tags</i> like header, nav, main, section, article, and footer.</p>
+        <p><mark>Tip:</mark> Semantic tags improve SEO and accessibility!</p>
+        <p><h2>Contact</h2></p>
+        <p>You can reach me at <a href="https://www.google.com" target="_blank"> Dhara Sojitra</a></p>
+        <p> 2025 My First Semantic Page</p>
+    </body>
+</html>
