@@ -1,0 +1,149 @@
+Task1(icon)
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title> Welcome </title>
+        <link rel="icon" type="image/png" href="download1.png">
+        <meta http-equiv="refresh" content="10;url=https://google.com">
+    </head>
+    <body>
+        this is plane text.
+        <h1> Welcome </h1>
+        <p>This is paragraph.</p>
+    </body>
+</html>
+
+Tags
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tags Example</title>
+        <link rel="icon"
+               type="image/png"
+               href="favicon1.png"/>    
+            </head>
+            <body>
+                <!-- Tag Example -->
+                 <header> My Website Header</header>
+                 <nav>Navigation bar</nav>
+                 <main>
+                    <section>
+                        <article>
+                            <h1>heading 1</h1>
+                            <h2>heading 2</h2>
+                            <h3>heading 3</h3>
+                            <h4>heading 4</h4>
+                            <h5>heading 5</h5>
+                            <h6>heading 6</h6>
+                        </article>
+                    </section>
+                    <section>
+                    <p> This is<br> 
+                        paragraph<br>
+                         with <u> underline</u> text</p>
+                    <pre> This 
+                          is preformatted 
+                          text example</pre>
+                    <h3> This text is written in<i> italics</i></h3>
+                    <h3> This is <em> emphasize </em> text</h3>
+                    <p> This text is written in 
+                        <b>bold</b></p>
+                    <p> This is <strong> strong/important</strong></p>
+                    <h2> Old price <del> 5500</del> new price <ins> 3200</ins></h2>
+                    <h4> This is <mark> highlighted </mark> text </h4>
+                    <h2> water fromula:H<sub>2</sub>O</h2>
+                    <h3>a<sup>2</sup>O</h2>
+                        <!-- To add horizontal line/divider -->
+                         <hr><!--horizontal roller-->
+                         <abbr title="Hyper Text Markup Language">HTML</abbr>
+                         <p title ="Hyper Text Markup Language">HTML</p>
+                         <h2><b><u>H<sub>2</sub>SO<sub>4</sub></u></b></h2>
+                         <h3>(a+b)<sup>2</sup>=<i><mark>a<sup>2</sup>+2ab+b<sup>2</sup></mark></i></h3>
+                    </section>
+                    
+                    <section id="about">
+                        <p class="para.class">...</p>
+                        <p class="test">...</p>
+                        <p class="para.class" id="pid">...</p>
+                    </section>
+                 </main>
+            </body>
+</html>
+
+List
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> List </title>
+    </head>
+    <body>
+        <a href="https://www.google.com" target="_set">
+            Click me to visit to google
+        </a>
+        <hr>
+        <a href="URL" target="_blank">
+            Click here for new blank page
+        </a>
+        <p id="demo"></p>
+        <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at quibusdam reprehenderit accusantium laboriosam reiciendis, debitis nam ullam soluta enim aliquid cum qui provident, hic omnis quaerat voluptatum delectus? In incidunt quidem maiores porro reiciendis dignissimos dicta expedita placeat est recusandae ab distinctio molestiae ipsam suscipit, rerum quibusdam! Odit earum dolorum sapiente dolor cum reprehenderit, quibusdam similique delectus placeat assumenda? Voluptate nam maiores beatae, nulla quaerat, ratione sunt dignissimos, ducimus placeat laborum expedita! Accusantium eius ipsa hic maxime. At nisi cumque non beatae neque dolore porro voluptatem sapiente maiores repellendus eius soluta facere nihil error vel in tempore incidunt suscipit ipsam ullam, quis id et. Incidunt maxime accusamus aspernatur omnis voluptas, ullam similique nostrum nobis enim sapiente. Ea deserunt accusamus sed neque voluptates officia blanditiis distinctio corrupti iure dolores dicta accusantium, iusto voluptatum explicabo consequuntur libero incidunt enim alias sapiente nulla. Necessitatibus porro quidem iste, non voluptates sequi at doloribus obcaecati consectetur dolores atque eveniet! Facere ipsa hic ab velit commodi nulla fuga magni dolor consequatur fugit illum repellendus possimus nihil totam, nostrum pariatur adipisci eveniet praesentium? Sint velit dolores vitae, tenetur ad debitis sequi adipisci consectetur aliquam quibusdam incidunt, quo porro expedita quasi accusantium, id molestiae temporibus quaerat. At rerum laborum sed numquam similique alias iure tempora nulla itaque corporis. Quis quae quaerat dignissimos! Aspernatur autem tempora adipisci ad assumenda! Error consectetur officia esse culpa, quis debitis tenetur obcaecati, recusandae, porro alias deserunt nisi! Beatae voluptas porro, aspernatur velit ut necessitatibus officiis sequi. Cupiditate, reprehenderit itaque! Voluptatibus vero quisquam rerum ex similique illo ut, soluta officiis. Quibusdam, reiciendis! Error nam id tempora ipsum facilis, maiores esse voluptatibus fugit, sit, voluptatem consequuntur ipsa amet dolor. Porro, provident recusandae nam iste sit nostrum? Dignissimos qui voluptates ratione et, repudiandae quidem quae iste sapiente incidunt velit. Ipsa numquam debitis, quas sed nihil saepe sapiente iure unde, aut tenetur pariatur libero nostrum animi. Excepturi quia id animi obcaecati illum dicta ullam? Dicta laborum dolorem fuga odio, vero ratione voluptate soluta illo non eveniet? Sequi natus nisi enim asperiores delectus maiores fugit blanditiis nulla, eveniet odit perferendis. Voluptatem ea perferendis culpa cupiditate corrupti earum voluptate distinctio vero eos nisi sunt deleniti, harum impedit at dolore accusantium! Inventore pariatur, nesciunt id officia aperiam assumenda error consequuntur similique explicabo voluptatem voluptas eaque numquam illum! Odit libero enim veritatis natus unde molestiae at error mollitia, rem quae eum excepturi perferendis eveniet recusandae a quos quam sed! Reprehenderit officiis tempora iure nostrum sunt voluptatum dolor, numquam quaerat inventore facilis odit earum animi in id ipsa reiciendis aliquam. Laudantium adipisci, repellendus dolores obcaecati numquam iure laborum culpa in soluta? Soluta rem provident eius quibusdam odio dolor et ex omnis veritatis molestias, obcaecati impedit ad, possimus recusandae cumque deserunt quam quasi ipsum natus saepe sed nemo a eum sint. Cupiditate nemo incidunt enim odio rerum odit dolorum dicta voluptas eum, eveniet quo non delectus deserunt eligendi magnam mollitia cumque voluptatibus aperiam ducimus corrupti unde nostrum, tempora similique. A nobis atque ea at. Voluptatem, ab veniam explicabo animi possimus illo, incidunt quas rem iste repellendus, minima sequi impedit consectetur beatae iure dolorem? Possimus ad natus neque esse autem dignissimos laudantium vero earum repudiandae laboriosam dolores minus, inventore, harum fugiat recusandae sint similique at. Quos, ipsum suscipit recusandae officiis quia explicabo a ducimus, impedit vel deserunt non voluptatum voluptas ea, magni consectetur. Rerum pariatur vero provident? Modi inventore corporis obcaecati cumque ab et doloremque sed hic quaerat facilis, quos, quisquam ullam vero est aspernatur quo eligendi earum atque tempore facere quibusdam maxime delectus illo. Perferendis beatae sapiente totam odit obcaecati consequuntur consectetur tempore sint, alias ut! Rerum iure nam ducimus neque? Placeat amet dolorem iure alias fugiat excepturi eveniet! Velit explicabo enim eveniet ad accusamus possimus praesentium aut consectetur nostrum, rerum quod necessitatibus minima sit qui nulla omnis facere harum dicta, facilis asperiores. Est beatae aliquid commodi qui dignissimos numquam inventore adipisci nisi atque similique veritatis quam porro facilis assumenda minus natus libero, sint earum corporis dolorum illum blanditiis ipsa asperiores cupiditate? Voluptatem mollitia sit optio ratione cumque rem numquam fuga corporis maiores alias, facere omnis, inventore nesciunt doloremque! Nemo atque vitae ipsum architecto nostrum, repellat reiciendis, veritatis ducimus similique nisi eos voluptatum. Earum amet dolorem saepe provident quaerat quod dicta ratione doloremque aut temporibus quam voluptates nobis voluptatibus consequatur reprehenderit, corporis voluptatum natus qui atque inventore deserunt illum asperiores molestiae? Explicabo sint earum minima alias obcaecati fugit possimus incidunt aperiam quidem velit debitis harum magni vel rerum quisquam iure impedit dolorum veniam ducimus, facilis corporis. Ratione quisquam quidem laboriosam quod libero iure ad dolorem veniam quasi, nemo eius temporibus aperiam minus fugit velit blanditiis voluptatem facilis officia! Assumenda, velit expedita officiis placeat quidem aut possimus reprehenderit ducimus excepturi corrupti libero iste quo natus facere dolorum ipsa mollitia incidunt blanditiis magni consequatur impedit. Ullam veritatis esse eius culpa numquam magnam quaerat facere, eaque suscipit quasi! Fuga totam incidunt eos vero dolorem. Atque eligendi accusantium sint aperiam accusamus, ipsam impedit vero, at, iusto iste quasi laborum debitis quia aliquid adipisci error? Inventore minus culpa possimus animi! Reprehenderit tempore magnam perferendis suscipit deleniti aspernatur repudiandae nisi odio explicabo officia, minus voluptatem. Quis ea, atque reiciendis distinctio dicta quam autem tenetur voluptatem minima, repudiandae ullam corporis veritatis. Dolore quia animi cum, vel eaque voluptatibus provident. Ducimus dolorum consequuntur quod praesentium porro. Voluptas tenetur praesentium molestiae consequatur, facilis iste commodi sit optio distinctio, corporis accusamus adipisci nobis provident, consectetur eaque amet ad modi molestias fugiat esse harum architecto. Quam neque quaerat deserunt ea earum id. Perferendis, similique quia. Nam, omnis? Rem distinctio autem consequuntur, nesciunt, nostrum officiis sed saepe ex id ipsum officia ullam sunt. Doloremque consequuntur quod nihil aliquid quia voluptates aliquam vel minus ipsa delectus praesentium dignissimos et earum reiciendis itaque ipsam, porro sunt, voluptatem perferendis officiis. Obcaecati error magni officiis ad voluptatem cupiditate, minima modi ipsa temporibus incidunt. Excepturi ad magnam, minima rerum numquam aperiam earum placeat veniam in eos, molestias mollitia quis sint, sunt voluptatibus? Voluptates amet sint modi. Architecto, pariatur voluptates error quos odit, eveniet atque reprehenderit sapiente qui, explicabo quibusdam?</h1>
+        <a href="#demo"> Back to top </a>
+    </body>
+</html>
+
+Launch&Dinner
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Launch & Dinner Menu </title>
+    </head>
+    <body>
+        <ul type="circle">
+            <li> Lunch </li>
+            <ol type="a">
+                <li> Roti </li>
+                <li> Sabji </li>
+                <li> Dal/Rice </li>
+            </ol>
+            <li> Dinner </li>
+            <ol type="A">
+                <li> Pizza </li>
+                <li> Burger </li>
+                <li> HochPoch</li>
+            </ol>
+        </ul>
+    </body>
+</html>
+
+audio&video
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Audio & Video </title>
+    </head>
+    <body>
+       <audio controls autoplay muted loop>
+        <source src="audio.mp3" type="audio/mp3"> Browser not support 
+       </audio>
+       <video controls autoplay muted loop height="400" width="500">
+        <source src="video.mp4" type="video/mp4"> Browser not support
+       </video>
+    </body>
+</html>
+
+Image&Figure
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Image & Figure </title>
+    </head>
+    <body>
+        <img src="i.png" height="300" width="300" alt="Image not found" >
+        <img src="img.png" height="300" width="300" alt="Image not found" >
+        <figure>
+            <img src="b.png" height="300" width="300" alt="Image not found" >
+            <img src="img.png" height="300" width="300" alt="Image not found" >
+            <figcaption> This is Image. </figcaption>
+        </figure>
+    </body>
+</html>
+
