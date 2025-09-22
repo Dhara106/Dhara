@@ -1,0 +1,183 @@
+Frame
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Frame </title>
+    </head>
+    <body>
+        <iframe src="launch&dinner.html" height="500" width="500"></iframe>
+        <iframe src="https://www.youtube.com/embed/4Kj2DLGqBRY?Controls='0'"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58756.08068822439!2d72.5881564!3d23.014406!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d0845742b0f%3A0x7e05407cae921b5a!2sPalladium%20Mall%20Ahmedabad!5e0!3m2!1sen!2sin!4v1758517313097!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </body>
+</html>
+
+Table
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+    <body>
+        <table border="4" cellpadding="10" cellspacing="5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>50</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+Table Merge
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Merge tables</title>
+    </head>
+    <body>
+        <table border="4" cellpadding="10" cellspacing="1">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+            </tr>
+        </table>
+        <br>
+        <table border="4" cellpadding="10" cellspacing="1">
+            <tr>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">C</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+Task1
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Task</title>
+    </head>
+    <body bgcolor="lightblue">
+        <h1>Table example</h1>
+        <table border="5" cellpadding="30" cellspacing="2" style="border:2px solid red" bgcolor="white" align="center">
+            <tr>
+                <td rowspan="2">A</td>
+                <td>B</td>
+                <td rowspan="3" >D</td>
+                <td colspan="2" align="center">E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td rowspan="2">G</td>
+                <td rowspan="2">H</td>
+                <td rowspan="2">I</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">J</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">K</td>
+                <td>L</td>
+                <td colspan="2" align="center">M</td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+Task2
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example2</title>
+    </head>
+    <body align="center">
+        <h1>LJ Un: Student List </h1>
+        <table rules="groups" border="2" cellspacing="20" cellpadding="10" align="center" >
+            <thead bgcolor="skyblue">
+                <tr>
+                    <th>Branch</th>
+                    <th>Students Name</th>
+                    <th>Roll no.</th>
+                </tr>
+            </thead>
+            <tbody bgcolor="yellow">
+                <tr>
+                    <td rowspan="3" align="center">CS</td>
+                    <td align="center">A</td>
+                    <td align="center">1</td>
+                </tr>
+                <tr>
+                    <td align="center">B</td>
+                    <td align="center">2</td>
+                </tr>
+                <tr>
+                    <td align="center">C</td>
+                    <td align="center">3</td>
+                </tr>
+            </tbody>
+            <tbody bgcolor="yellow">                
+                <tr>
+                    <td rowspan="3" align="center">EC</td>
+                    <td align="center">D</td>
+                    <td align="center">1</td>
+                </tr>
+                <tr>
+                    <td align="center">E</td>
+                    <td align="center">2</td>
+                </tr>
+                <tr>
+                    <td align="center">F</td>
+                    <td align="center">3</td>
+                </tr>
+            </tbody>
+            <tfoot bgcolor="lightgreen">
+                    <tr>
+                        <th colspan="3">LJ 2025</th>
+                    </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+Purchase Table
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pruchase task</title>
+    </head>
+    <body align="center">
+        Advanced HTML tag for Table using thead,tbody and tfoot with META tag
+        <table border="2" style="border:1px blue" cellspacing="10" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Purchase Order:9876</th>
+                    <th>Invoice- 30th Oct 2022</th>
+                </tr>
+            </thead>
+        </table> 
+    </body>
+</html>
