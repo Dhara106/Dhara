@@ -1,0 +1,33 @@
+Example 1
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example1 mountains</title>
+    </head>
+    <body>
+        <svg height="300" width="600" style="border:1px solid black">
+            <polygon points="0,300,100,200,200,300,200,300,300,200,400,300,400,300,500,200,600,300" stroke="black" stroke-width="4px" fill="brown" fill-rule="nonzero"/>
+            <circle cx="400" cy="100" r="50" fill="yellow" stroke="black" stroke-width="4px"/>
+        </svg>
+    </body>
+</html>
+
+Example 2
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example2 shapes</title>
+    </head>
+    <body>
+        <svg height="250" width="500" style="border:4px solid black">
+            <rect x="50" y="50" height="150" width="400" stroke="grey" stroke-width="2px" fill="white"/>
+            <circle cx="250" cy="125" r="75" stroke="grey" stroke-width="2px" fill="white"/>
+            <line x1="250" y1="50" x2="250" y2="200" stroke="grey" stroke-width="2px"/>
+        </svg>
+        <svg height="250" width="500" style="border:4px solid black">
+            <rect x="50" y="50" height="150" width="400" stroke="grey" stroke-width="2px" fill="white"/>
+            <line x1="50" y1="50" x2="450" y2="200" stroke-width="2px" stroke="grey"/>
+            <line x1="450" y1="50" x2="50" y2="200" stroke-width="2px" stroke="grey"/>
+        </svg>
+    </body>
+</html>
