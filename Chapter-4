@@ -1,0 +1,332 @@
+Task1.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-color: cyan}
+            p{color:green;font-size:24px}
+            h1{color:tomato}
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p style="color:red">Happy New Year</p>
+    </body>
+</html>
+
+Task2.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+            p{background-color: red; color: yellow }
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p>Happy New Year</p>
+    </body>
+</html>
+
+style.css
+body{background-color: cyan}
+p{color:green;font-size:24px}
+h1{color:tomato}
+
+Task3(id).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header{color: tomato; background-color: cyan}
+        </style>
+    </head>
+    <body>
+        <h1 id="header">Id base</h1>
+        <p id="header">Id base not valid as per w3c</p>
+        <p>Normal Text</p>        
+    </body>
+</html>
+
+Task3(class).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .abc{color: green; text-align: center}
+        </style>
+    </head>
+    <body>
+        <h1 class="abc">Class base</h1>
+        <p class="abc">You can use without issue</p>
+        <p               >See</p>
+    </body>
+</html>
+
+Trial&Error.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header{color: tomato; background-color: cyan;}
+            #a{text-align: center;}
+            p{color: red;}
+        </style>
+    </head>
+    <body>
+        <!-- <h1 id="header a">Id base</h1> -->
+        <p id="header">Hello</p>
+    </body>
+</html>
+
+class.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* .abc{color: green; text-align: center} */
+            p.abc{color: green; text-align: center}
+            .xyz{background-color: tomato;}
+            #mno{color: royalblue;}
+        </style>
+    </head>
+    <body>
+        <h1 class="abc xyz">Multiple Class</h1>
+        <p class="abc">-_______</p>
+        <p id="mno" class="abc" >see the effect</p>
+    </body>
+</html>
+
+universal.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {margin: 0px; padding: 0.5px; color: blue; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Id base</h1>
+        <p>Id base not valid as per w3c</p>
+        <p>Normal Text</p>        
+    </body>
+</html>
+
+attribute.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input[type="text"]{background-color: lightpink; width : 150px}
+            a[target="_blank"]{color: tomato; text-decoration: none;}
+        </style>
+    </head>
+    <body>
+        <form>
+            Text<input type="text" name="abc" value="abc">
+            <p></p>
+            Email<input type="email">
+            <p></p>
+            Submit<input type="submit">
+        </form>
+        <p>
+            <a href="#" target="_blank">Click me</a>
+            <a href="#" target="_self">Click self</a>
+        </p>
+    </body>
+</html>
+
+Example.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul b{color:blue}
+            b>li{color:red}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><b>abc</b></li>
+            <li>pqr</li>
+            <b><li>mno</li></b>
+        </ul>
+        <b>Hello
+        </b>
+    </body>
+</html>
+
+Task4.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{text-align:center; text-decoration: underline;letter-spacing: 5px;}
+            .b{text-align: justify;text-decoration: line-through;text-indent: 20px;}
+            .c{text-align: end;text-transform: capitalize;text-decoration: overline;}
+            .d{text-align: start; word-spacing: 20px;}
+            .e{text-align: right;line-height: 10px;}
+            .s1{text-shadow: 5px 5px 20px green;}
+            .s2{text-shadow: 5px 5px 20px green, -5px 2px 20px yellow;}
+            .s3{text-shadow: 0 0 5px yellow,; color: white;background-color: black;}
+        </style>
+    </head>
+    <body>
+        <p class="a">lorem100</p>
+        <p class="b">lorem101</p>
+        <p class="c">lorem102</p>
+        <p class="d">lorem103 jkfcx sdfdfdv</p>
+        <p class="e">lorem104 fjcbdsj  \   \cvjk</p>
+        <h1 class="s1">Single Shadow</h1>
+        <h1 class="s2">Multiple Shadow</h1>
+        <h1 class="s3">Glowing Shadow</h1>
+    </body>
+</html>
+
+Task5.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{font-family: "COPPERPLATE"; font-size: 30px;font-variant: small-caps;}
+            .b{font-style: italic; text-decoration: underline;text-align: center;}
+            .c{letter-spacing: 20px;word-spacing: 20px; font-weight:bold;text-shadow: 5px 5px 1px yellow;}
+            .d{color: red;text-align: justify;text-transform: uppercase;text-indent: 30%;line-height: 50px;}
+        </style>
+    </head>
+    <body>
+        <p class="a">Raj</p>
+        <p class="b">Student of CSE</p>
+        <p class="c">Learning CSS</p>
+        <p class="d">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore rem velit error omnis aspernatur culpa quidem cumque, fugiat asperiores doloribus iusto soluta reprehenderit praesentium debitis incidunt veniam explicabo ad! Quod?</p>
+    </body>
+</html>
+
+Border.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{border-width: 5px; border-style:solid;border-color:  red green blue yellow;}
+            .b{border-width: 5px; border-style: double;border-color:  red green blue yellow;}
+            .c{border-width: 3px; border-style: dotted;border-color:  red green;}
+            .d{border-width: 3px; border-style: dashed;border-color:  blue;}
+            .e{border-width: 5px;border-style: solid dashed dotted double;border-color:  blue red tomato yellowgreen }
+        </style>
+    </head>
+    <body>
+        <p class="a">A solid red green blue yellow border</p>
+        <p class="b">A double red green blue border</p>
+        <p class="c">A dotted red green border</p>
+        <p class="d">A dashed blue border</p>
+        <p class="e"><b>Note:</b> 
+            The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.
+        </p>
+    </body>
+</html>
+
+font.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <style>
+            .pacifico-regular {
+                font-family: "Pacifico", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="pacifico-regular">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse facere velit perferendis assumenda ab architecto repellendus minima laudantium odio quo. Ut rerum accusamus, eos voluptate facere sapiente illum voluptatum doloribus?</p>
+    </body>
+</html>
+
+Example2.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{height: 300px;box-sizing: content-box; width: 300px; padding: 15px; margin: 15px; border: 5px solid red; background-color: cyan; text-align: center;}
+            .b{height: 300px;box-sizing: border-box; width: 300px; padding: 15px; margin: 15px; border: 5px solid red; background-color: cyan; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <div class="a">I am Content Box</div>
+        <div class="b">I am border Box</div>
+    </body>
+</html>
+
+image.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-image: url('animation.gif');background-repeat: no-repeat;height: 100%;width:100%}
+        </style>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+Task(Image).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div{background-image: url('download.jfif'); background-repeat: repeat-x;height: 300px;width: 300px;background-position: 50px 10px;}
+            body{background-color: pink}
+        </style>
+    </head>
+    <body>
+        <p class="div"></p>
+    </body>
+</html>
+<!-- Do at home print image at right side corner of body -->
+
+pseudo.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a:link{color:red}
+            .a:visited{color: green}
+            .a:hover{color: blue}
+            .a:active{color: orange}
+            button:hover{background-color: yellow;color: red;}
+            input:focus{background-color: tomato;}
+            ul li:nth-child(2){color:red}
+            ul li:not(.frod){background-color: cyan;font-size: 60px;}
+        </style>
+    </head>
+    <body>
+        <a class="a" href="https://www.google.com" target="_blank">Click me</a>
+        <button value="Click me">I am Button</button>
+        <input type="text">
+        <ul>
+            <li>First child</li>
+            <li>Second child</li>
+            <li class="frod">Third child</li>
+        </ul>
+    </body>
+</html>
+
+Task=6.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-image: url('download.jfif'); background-repeat: no-repeat; background-position: center;background-attachment: fixed;}
+            .div{font-size: 30px;}
+        </style>
+    </head>
+    <body>
+        <div class="div">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quis neque quod? In, obcaecati vel asperiores laborum hic, eos eaque accusamus quasi adipisci temporibus repellendus aliquid inventore et qui est dolor deserunt nesciunt fugit rerum odio tempore distinctio animi ex. Praesentium laborum repellat iure, neque ut porro laudantium libero veniam, consectetur, perferendis commodi. Facere necessitatibus vel est nobis quia repudiandae, qui dignissimos aut ex consequatur, quo facilis cumque itaque ad culpa reprehenderit ullam magni optio commodi suscipit neque tempora. Minus minima, autem sequi excepturi earum quae id dolorem sapiente. Maiores vel eos minus voluptatum qui at a animi reprehenderit molestiae atque, corporis quaerat! Quibusdam assumenda, repudiandae doloribus inventore dolor dolore magnam repellendus maiores aperiam unde eaque, adipisci deserunt tempora accusamus, amet quo voluptas voluptate saepe? Iste sequi delectus cupiditate. Veniam repellendus distinctio nostrum illum vitae dolores modi quasi. Rerum ad ut voluptates deleniti, consequuntur labore corrupti beatae possimus porro sequi amet eaque, molestiae assumenda non deserunt, harum cupiditate repudiandae animi facere consequatur vel iusto nam dolores reprehenderit. Illum voluptatem facilis saepe aliquid. Officia, exercitationem corrupti ipsam cum, expedita quia, quasi accusamus voluptatum tempore pariatur tenetur facere laborum? Quia qui minus deserunt voluptatem eveniet illum veniam facere mollitia vel similique assumenda, beatae eaque hic impedit accusantium rem obcaecati consequuntur eius error rerum praesentium nulla distinctio? Optio libero enim nostrum minus doloribus asperiores quasi rerum tempora dolore, dolorem mollitia aliquid facilis id ullam eum soluta adipisci ducimus qui totam tenetur voluptates, nulla veritatis laboriosam exercitationem. Dolore pariatur nemo ut voluptas. Magnam ut iste minus ratione dolore, sequi consectetur quaerat? Perferendis minus qui amet vel reprehenderit deserunt optio nulla corporis maxime, hic pariatur alias eveniet molestiae consectetur nihil corrupti ipsa quaerat ut, nobis iusto? Facilis incidunt soluta culpa repellat. Odio voluptas in molestias nam quasi eum, aliquid deserunt corporis iure quidem dicta voluptate quaerat animi magnam autem itaque tenetur ex, asperiores, ducimus repellendus mollitia! Repellat dicta molestiae deleniti eos doloribus provident aperiam in, fugit harum maiores impedit minus quia nulla, debitis vitae natus consequatur exercitationem culpa! Quis eveniet quibusdam ab omnis labore hic corrupti placeat exercitationem reprehenderit inventore dolorum consequatur magni recusandae repellat ipsum suscipit tempora qui, nulla cum! Fugiat commodi, suscipit culpa sequi inventore similique. Molestiae ex eius, iste placeat magnam nisi amet distinctio voluptatem quas quae tempore dignissimos quisquam labore quam omnis? Fugit nostrum doloribus culpa, laboriosam provident, alias repellat ab nesciunt enim error unde at voluptates tenetur officiis dolorem explicabo autem nisi. Quasi perspiciatis numquam ipsum illum repellat consectetur eos dolore, incidunt, soluta dolores quisquam unde dicta sit iusto inventore fugiat reprehenderit in, veritatis eius alias consequatur odit aut eveniet molestias! Quas cumque ipsum repellendus saepe possimus in iusto, dolorem aut doloremque sapiente itaque tenetur sequi ex obcaecati officiis voluptates temporibus voluptatibus labore dolor consectetur optio veritatis, nulla dicta eveniet. Repellendus praesentium ab libero aspernatur illum! Eaque dolores odio sit, aperiam nesciunt ratione laudantium autem veritatis esse praesentium nemo maxime ea officiis accusamus, reiciendis ducimus expedita voluptas impedit optio distinctio libero fugit vel velit! Cumque, alias unde culpa quam excepturi quisquam nam tempora nulla optio nihil. Quis cumque modi facilis nemo ex commodi aliquam esse inventore. Ipsa autem nulla hic reprehenderit quibusdam impedit corporis nisi. Asperiores ab adipisci cupiditate, laborum veritatis officia velit commodi recusandae sapiente ipsa nobis, nostrum tenetur eligendi optio perspiciatis consequatur! Dolor aliquam, libero enim ea iure quasi reprehenderit voluptas quaerat exercitationem placeat officia, id incidunt inventore est repudiandae sapiente laborum, laudantium et nobis quis sed quam. Dolores harum accusantium, laudantium blanditiis aliquid maxime quo numquam culpa deserunt, est ducimus nesciunt sunt quis, vitae architecto. Fugit esse iusto voluptate sint vitae sequi consectetur, nam labore aperiam nulla dolorum, omnis ipsum porro consequuntur obcaecati aut deserunt vel quo. Eum rem nisi et dolore, quo incidunt facilis, ipsam iusto aliquid sint sapiente optio perferendis consequatur maiores expedita qui perspiciatis nihil, excepturi at numquam quaerat quis commodi. Cupiditate, dolorum at totam impedit id libero assumenda quaerat natus officia temporibus ullam aperiam, nisi voluptate cum corporis! Obcaecati rerum iusto quasi nulla! Qui ullam excepturi id ducimus inventore beatae magnam repellendus esse natus. Quaerat doloribus mollitia debitis quasi excepturi magnam cumque praesentium totam, doloremque maiores obcaecati cum molestiae iste corporis velit eaque nam saepe eum laborum! Repellendus quas ducimus nisi, distinctio quis aspernatur suscipit! Nihil nostrum explicabo recusandae labore dignissimos. Dolorem, laudantium iusto ab sint qui quia ea nesciunt maxime nisi recusandae accusamus. Doloremque ducimus, dolores error ipsam saepe neque similique fugit, pariatur deleniti vero necessitatibus. Aspernatur at expedita ducimus illo! Doloremque omnis quibusdam quis qui dolorum vero molestiae corporis. Harum dolorum amet, placeat quia eius nisi id culpa, similique deserunt tenetur laborum. Unde, totam earum cupiditate nesciunt dolorum ipsum nihil dolores ad, et veritatis laborum a. Eum aspernatur praesentium eius qui voluptas voluptatem deleniti suscipit! Quo autem eveniet est blanditiis. Tempore saepe perspiciatis laboriosam asperiores sunt exercitationem quaerat quisquam, accusantium inventore neque ullam nemo vero officia optio veritatis culpa libero eos. Vero, tempore! Neque hic, eum labore maiores sit quos quidem impedit facere autem sapiente voluptatem obcaecati excepturi ratione? Provident aspernatur earum molestias sint placeat quibusdam aliquid, omnis officiis voluptatum dolor voluptate maxime consectetur harum deserunt! In optio rerum tempora laudantium ullam. Enim magni dicta expedita, adipisci beatae illo similique nostrum voluptates, laborum quo itaque esse tempora aut deserunt, explicabo a consectetur! Sit eveniet pariatur perspiciatis molestias, optio dicta modi vero maiores mollitia eum at minima asperiores recusandae facilis porro assumenda ipsum hic. Nam itaque doloremque fugit ducimus at sapiente, harum magni nihil accusantium labore culpa deleniti sit temporibus quisquam quam, molestias totam facilis dolorum dicta architecto error voluptas? Accusamus eum aliquam optio, delectus atque harum? Sed exercitationem ullam aliquam amet nobis recusandae delectus culpa enim provident vitae, nihil, veritatis facere aut cupiditate possimus consectetur! Amet non asperiores nobis quod, voluptates saepe fugiat unde inventore assumenda? Animi, commodi cupiditate quod non autem molestias. Deleniti, nostrum! Blanditiis tempora possimus nisi eaque a facere nihil. Similique placeat iure eius molestias, dolorum veniam libero accusantium, laboriosam magni sequi doloribus distinctio corporis doloremque nihil impedit? Veritatis aliquid cum mollitia, atque quam distinctio sapiente accusamus dolores!</div>
+    </body>
+</html>
+
