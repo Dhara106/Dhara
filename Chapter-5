@@ -127,3 +127,138 @@ transform.html
     <div class="k">skewY(30deg)</div>
 </body>
 </html>
+
+mirrorimg.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img:hover{transform: scaleX(-1)} /*or scaleY(-1)*/
+    </style>
+</head>
+<body>
+    <img src="img.png" height="300px" width="300px">
+</body>
+</html>
+
+transition.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{height: 100px; width: 100px; background-color: cyan;
+            transition: 2s 2s;}
+        div:hover{height: 500px; width: 500px; background-color: tomato;}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+Task1oftransition.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            input{height: 20px; width: 100px; transition: 5s 1s;}
+            input:hover{height: 40px; width: 200px; background-color: tomato;
+            transition: 2s 2s;}
+        </style>
+    </head>
+    <body>
+            Username:<input type="text" >
+            <br>
+            password:<input type="password" >
+            <br>
+            <input href="www.google.com" type="submit">
+            <input type="Reset">
+    </body>
+</html>
+
+Task2oftransition.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{height: 100px; width: 100px; background-color: cyan; 
+                    transition: background-color 2s 2s, height 2s 4s, width 2s 6s , transform 2s 10s, border-radius 2s 12s}
+            div:hover{background-color: blue;height: 300px; width: 300px;  transform: rotate(3600deg); border-radius: 50%; }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+
+animation.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes demo{
+                /* from{background-color: pink;} 
+                to{background-color: green;} */
+                0% {background-color: pink;}
+                /* 25%{ background-color: cyan;}
+                50% {background-color: yellow;}
+                75%{background-color: red;} */
+                100%{background-color: blue; top: 0px; left: 100px;}
+            }
+            /* div{height: 200px; width: 200px; background-color:pink;animation-name: demo; animation-duration: 5s; animation-delay: 2s; 
+                animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: normal; }*/
+                div{position:relative;height: 200px; width: 200px; background-color:pink;animation-name: demo; 
+                    animation-duration: 5s; animation-delay: 2s; 
+                animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: normal; }
+        
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+example(ani).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes demo {
+                0%{background-color: cyan; top: 0px;left: 0px;}
+                25%{background-color: tomato; top: 0px;left: 500px;}
+                50%{background-color: yellow; top: 500px;left: 500px;}
+                75%{background-color: green; top: 500px;left: 0px;}
+                100%{background-color: cyan; top: 0px;left: 0px;}
+            }
+            div{position:relative;height:  200px; width: 200px; background-color: cyan; animation-name: demo; 
+                animation-timing-function:linear;animation-duration:  5s;
+            animation-delay: 2s; animation-direction: reverse; animation-iteration-count: infinite;}
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+example2(ani).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @keyframes circle{
+                0%{background-color: cyan;top: 0px;left: 0px;}
+                50%{background-color: yellow; top: 500px; left: 250px;border-radius: 50%;}
+                100%{background-color: red;top:0px; left:500px;}
+            }
+            div{position: relative;height: 200px; width: 200px; background-color: cyan;animation: circle 5s linear 2s infinite alternate;}
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
