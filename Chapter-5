@@ -262,3 +262,133 @@ example2(ani).html
         <div></div>
     </body>
 </html>
+
+Example(10/11).html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        @keyframes box{
+            0%{background-color: pink;top: 0px; left: 0px; transform: scaleY(1);}
+            25%{background-color: pink;top: 0px;left: 100px; transform: scaleY(1.2);}
+            50%{background-color: pink;top: 0px;left: 200px;transform: scaleY(1); transform: scaleX(1);}
+            75%{background-color: pink;top: 0px;left: 300px;transform: scaleX(1.2);}
+            100%{background-color: pink;top: 0px;left: 400px;transform: scaleX(1);}
+        }
+        div{position: relative;height: 100px;width: 100px;background-color: pink;animation: box 5s linear 2s infinite ;}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+Gradient.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* div{height: 200px;width: 200px;background-color: pink; background-image: linear-gradient(red,blue,green);} */
+        /* div{height: 200px;width: 200px;background-color: pink; 
+            background-image: linear-gradient(to bottom left,cyan,orange,tomato);} */
+            /* div{height: 200px;width: 200px;background-color: pink; 
+            background-image: linear-gradient(pink 60%,green 50%,tomato 10%);} */
+        div{height: 200px;width: 200px;background-color: pink; 
+            background-image: linear-gradient(90deg,cyan,orange,tomato);}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+task(gl).html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{height: 200px;width: 200px;background-color: pink;}
+        /*div:hover{background-image: linear-gradient(red,orange,yellow,green,blue);}
+        div:hover{background-image: linear-gradient(50deg,red,orange,yellow,green,blue);} */
+        div:hover{background-image: linear-gradient(red 10%,orange 20%,yellow 40%,green 60%,blue 80%);}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+task(gr).html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{height: 200px;width: 200px;background-color: pink;}
+        /*div{height: 100px;width: 200px;background-color: pink;}
+        div:hover{background-image: radial-gradient(red,yellow,blue);}
+        div:hover{background-image: radial-gradient(yellow 10%,red 25%, pink 60%);} */
+        div:hover{background-image: radial-gradient(circle,blue,yellow,pink)}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+Rainbow.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .b{height: 50px;width: 800px;font-family:'Times New Roman', Times, serif;padding-top: 10px;
+                background-image: linear-gradient(90deg,red,orange,yellow,green,blue,indigo,purple);}
+            .a{-webkit-background-clip:text;color:transparent;background-color: pink; text-align: center;
+                background-image: linear-gradient(90deg,red,orange,yellow,green,blue,indigo,purple);}
+        </style>
+    </head>
+    <body>
+        <div class="b" style="text-align: center;color: white;font-weight:bold ;font-size: 40px;">Rainbow</div>
+        <div class="a">FSD</div>
+    </body>
+</html>
+
+task(gc).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* div{height: 200px; width: 200px;
+                background-image: conic-gradient(red 45deg,yellow 90deg,green 180deg,blue 270deg,purple 360deg);} */
+            /* div{height: 200px; width: 200px;
+                background-image: conic-gradient(red 0deg 90deg,yellow 90deg 180deg,blue 270deg 360deg);} */
+            /* div{height: 200px; width: 200px;
+                background-image: conic-gradient(from 90deg,red,yellow,green);} */
+            div{height: 200px; width: 200px;border-radius: 50%;border: 1px solid black;
+ background-image: conic-gradient(red 0deg 90deg,yellow 90deg 180deg,blue 180deg 270deg,green 270deg 360deg);}
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
+
+task(10-11).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root{ --col:blue;--Bcol:lightgrey;}
+            h1{--col:purple;color: var(--col);}
+            p{color: var(--col);background-color: var(--Bcol);}
+        </style>
+    </head>
+    <body>
+        <h1>Local & Global</h1>
+        <p>Observe my color & background color</p>
+    </body>
+</html>
+
