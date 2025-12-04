@@ -1,0 +1,174 @@
+4/12/2025
+navbar.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <span class="navbar-text"><img src="personicon.png" style="width: 50px; height: 50px; border-radius: 50%;">FullStack Div</span>
+                <ul class="navbar-nav">
+                    <li class="navbar-brand">
+                        <a class="nav-brand" href="#">
+                            Lays
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div style="height: 2000px;" class="bg-warning"></div>
+    </body>
+</html>
+
+navbar&collapse.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- <button class="navbar-collapse" data-bs-target="#abc" data-bs-toggle="collapse">
+                     it has full width size
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <button class="navbar-toggler" data-bs-target="#abc" data-bs-toggle="collapse">
+                    <!-- it has small box size -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="abc">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contant</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item">Mobile</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Laptop</a>
+                                </li>
+                                <div class="dropdown-divider"></div>
+                                <li>
+                                    <a href="#" class="dropdown-item">TV</a>
+                                </li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
+
+tasknavbar.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+    </head>
+    <body>
+        <div>
+            <img src="c1.png" style="height: 300px;width: 100%;">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <!-- <button class="navbar-toggler bg-dark" data-bs-target="#abc" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="container-fluid">
+                <!-- <div class="collapse navbar-collapse" id="abc"> -->
+                    <span class="navbar-text">SunStar</span>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="height: 1500px;" class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab dolorum laudantium velit repudiandae dignissimos in esse quia delectus. Quos aliquid aspernatur quidem officiis, illo sed, commodi tenetur maxime expedita aut explicabo? Modi aliquam sunt, doloribus quam cumque, totam neque consectetur omnis quo tempora dolorem officiis ducimus tempore voluptate sint accusantium ad debitis voluptates eligendi velit culpa quidem quis. Laboriosam incidunt corrupti eveniet dolorum accusantium deleniti, nulla sunt illum neque, eligendi iste enim maiores totam. Nisi magni sapiente ad necessitatibus asperiores commodi veritatis sed delectus iusto voluptate, provident laudantium consequatur deserunt tempore. Voluptatem excepturi quidem inventore? Ab illo, cupiditate quis accusantium ipsa quibusdam, voluptas officia totam molestias in quos fugit minima ratione deserunt quas error soluta! Porro nam corrupti commodi autem quae, amet dicta minus mollitia exercitationem! Numquam veritatis, iure culpa dolore omnis amet minima. Labore perferendis recusandae magnam natus libero laboriosam debitis similique voluptates. Laudantium ullam rerum voluptates consequuntur sapiente dolorem, quasi quos, quo quae, quis magni debitis inventore illum architecto sunt ipsa quia totam deleniti. Quaerat, maiores voluptas? Modi nobis voluptate et iusto molestiae hic dolorum autem sed debitis, adipisci ullam ipsum accusamus, repellendus perferendis blanditiis amet soluta quod deserunt quis unde illum perspiciatis. Omnis reiciendis placeat nobis! Velit iste consequuntur maiores rerum officia quas expedita cupiditate hic autem, veritatis facere aliquid vel, delectus asperiores at quos. Maxime provident quas delectus tenetur ipsum, quaerat ea commodi laudantium distinctio, ad voluptates hic dignissimos. Laudantium vel modi quod aperiam, aliquid placeat minus quae ipsum aut voluptas dicta exercitationem alias beatae a architecto dignissimos nisi nam iure repellat cumque impedit deserunt nesciunt quo magni? Repellendus aspernatur tempora molestiae nobis doloribus voluptate praesentium at minima ipsam amet quas vitae voluptatem quaerat facere iste laborum pariatur optio, ducimus cum inventore temporibus. Voluptatem quo deleniti beatae consectetur perspiciatis, ut numquam quasi hic cupiditate natus repellat voluptatibus commodi dicta dolores vel alias culpa molestiae pariatur aliquam eos id fugit magni! Illo ad accusantium quasi sapiente, optio quisquam, itaque atque labore quae sequi est, corporis porro enim. Quam placeat aliquid, omnis a iure atque cupiditate officiis unde, id delectus debitis nihil rem distinctio sint soluta facere saepe corporis ut sequi sunt illo aspernatur magni vero numquam? Explicabo officiis quos impedit odio obcaecati voluptate. Illum unde numquam doloremque eum dolorem voluptates! Consequatur error, facere nobis dolor totam, placeat officia corporis soluta voluptatibus in dicta, labore ab reprehenderit autem. Saepe animi soluta neque nisi id eligendi doloribus a impedit placeat tempore aut nam hic nihil accusantium, harum molestias voluptas iure tenetur fuga, provident et officiis perspiciatis! Culpa consequatur maxime, accusantium sequi ab, tempore labore cum qui aliquid unde iste! Quod, provident. Et blanditiis qui voluptatibus, similique expedita sed iusto! Natus blanditiis perferendis impedit repellendus? Fugit aspernatur consequatur est nobis, consequuntur quidem vitae in, inventore omnis recusandae commodi non alias saepe, asperiores voluptatum veniam iusto ut maxime ab similique. Consequatur quas quod explicabo neque tenetur dolores quaerat delectus minima doloribus, dicta magni, aliquam veniam laudantium architecto incidunt quam! Corrupti molestiae quaerat, consequuntur sit inventore nulla ab, recusandae nihil ut facere necessitatibus, ullam nesciunt eos! Cumque ratione magnam nemo ab fugit quia cum iusto ipsam, sequi corrupti dignissimos modi doloremque placeat hic enim illo provident optio, ducimus quos beatae? Animi, velit mollitia quasi consequuntur eum sunt ut nisi dolores vitae molestiae ratione tenetur dolorum incidunt maxime amet obcaecati eveniet illum perspiciatis deleniti. Deserunt, magnam. Qui, repudiandae cupiditate fugit deserunt excepturi unde reprehenderit. Officiis voluptas accusantium possimus doloribus voluptatum tenetur impedit quasi, sapiente sint quod distinctio cum temporibus atque eius maiores eaque cumque facere asperiores magni iure quae quos dicta. Eligendi quidem error, illum maxime harum sapiente provident, voluptatum possimus suscipit maiores aliquid, vel voluptas architecto consequatur? Ut unde corporis illo laborum cupiditate quos. Sint aliquam libero delectus optio praesentium deserunt nemo incidunt dolores autem totam est deleniti hic maxime natus nesciunt et odit consequatur, eveniet placeat laborum itaque! Incidunt est nam porro commodi veritatis perspiciatis quisquam ex in esse corporis eos cupiditate a fugiat officiis, quas iusto omnis pariatur? Cum veritatis dolores repudiandae repellat ab, dolorum eaque quae quis excepturi commodi, ratione, tenetur id possimus animi vitae incidunt labore maxime maiores. Possimus distinctio dolorem a aliquid dolor veritatis, corrupti necessitatibus rerum ea omnis vitae laboriosam sed nisi eum explicabo similique odio quod? Consequuntur accusantium harum sit temporibus ut, nulla nisi quas porro velit, suscipit fugit voluptatum dolores debitis! Non voluptates reprehenderit nobis voluptas aliquam porro consequatur cumque dignissimos! Eligendi vel corrupti inventore est quo cupiditate aut pariatur rerum illum, ex sapiente voluptatibus iste aliquam obcaecati minus sequi numquam voluptate fuga? Dolorem numquam ea ad, consequatur accusamus eaque quis amet optio dolores temporibus minima et aliquid consectetur perspiciatis magnam fugiat reprehenderit veniam nisi, esse accusantium voluptates. Facilis, quos voluptates. Mollitia quisquam officia totam modi exercitationem quas quo ut libero, culpa cumque labore corrupti veritatis corporis quia, nostrum et nemo ad sit qui facere! Harum hic nisi nemo pariatur ipsa perferendis quaerat exercitationem neque alias vero maxime ullam tempore quod commodi temporibus nobis perspiciatis quae vitae quibusdam autem dolorum itaque, saepe deserunt ex! Nam architecto voluptates, expedita vitae voluptatem necessitatibus sapiente autem, dolorem provident similique, quis dolor incidunt illo nemo. Atque, nesciunt. Explicabo labore delectus assumenda placeat! Laborum, laudantium necessitatibus! Corrupti amet nihil, expedita optio voluptates deleniti necessitatibus laboriosam libero eius temporibus, accusamus alias, dicta beatae iure nam odio placeat at quaerat repudiandae vero excepturi. Esse voluptatibus vitae, provident consequatur neque eum natus reprehenderit fuga perferendis illum minus quam dicta repellendus eaque libero vero quae? Debitis id ipsa impedit ea quisquam saepe voluptatem officiis quibusdam delectus sequi repellendus similique ducimus velit incidunt, laboriosam possimus aut et atque error eveniet. Cumque, mollitia explicabo. Placeat, illo? Dolore cumque autem alias, commodi nihil iure accusantium tempore et dolor magnam debitis qui. Itaque dignissimos sit illo reiciendis neque! Pariatur, modi enim necessitatibus consectetur nostrum alias placeat maiores cum optio libero est. Nobis vel laborum, in quas ipsum rerum iusto quisquam reiciendis odio sequi suscipit eligendi perferendis quidem nam, impedit commodi corporis quia dolore recusandae. Neque in possimus laudantium adipisci? Quos dolorum officiis quasi porro alias iure.</div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+            <div class="container-fluid d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a class="nav-link ">@2025</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
+
+scrollspy.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top " id="#parent">
+            <div class="container-fluid">
+                <span class="navbar-text">Section</span>
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Section1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Section2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Section3">Contant</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="parent">
+            <div id="Section1" class="container-fluid bg-success" style="height: 800px; padding: 100px;">
+                <h1>Home data</h1>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex architecto nulla aperiam, illum, delectus distinctio, vero quas quo quae nemo iste iusto suscipit consequatur in. Accusamus totam officiis hic iste.
+            </div>
+            <div id="Section2" class="container-fluid bg-warning" style="height: 800px;padding: 100px;">
+                <h1>About data</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, veniam doloribus illo mollitia amet ad facere, veritatis impedit aut nesciunt nobis quibusdam necessitatibus quia voluptates sunt quasi quae placeat vel?
+            </div>
+            <div id="Section3" class="container-fluid bg-danger" style="height: 800px;padding: 100px;">
+                <h1>Contant data</h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, laborum ipsa aliquid nam veritatis odit quis velit, accusantium autem magnam delectus labore obcaecati rerum tenetur. Distinctio dignissimos accusantium ratione blanditiis.
+            </div>
+        </div>
+    </body>
+</html>
+
