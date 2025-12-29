@@ -1,0 +1,477 @@
+22/12/2025
+a.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript" type="text/javascript">
+            document.write("Internal IS")
+            console.log ("I am on console")
+        </script>
+    </head>
+    <body></body>
+</html>
+
+p.js
+document.writeln("Hello Students")
+/*writeln means it give space between two words.*/
+document.write("Have you observe something.")
+console.log("I am still on console for sharing error msgs.")
+e.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="p.js">
+        </script>
+    </head>
+    <body></body>
+</html>
+
+const.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            x=10
+            y=5
+            z=x+y
+            console.log("z")
+            console.log(z)
+        </script>
+    </head>
+</html>
+
+c.js
+const a=10
+function fun(){
+    a=20
+    console.log(a)
+}
+fun()
+const2.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="c.js"></script>
+    </head>
+</html>
+
+v.js
+var a=10
+    function fun(){
+        var b=20
+        console.log(a,b)
+    }
+    fun()
+    console.log(a)
+v2.js
+function f2(){
+    var a=10
+    console.log(a)
+}
+f2()
+console.log(a)
+v3.js
+var a=10
+var a=8
+a=7
+console.log(a)
+var.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="v2.js"></script>
+        <script src="v.js">
+        </script>
+        <script src="v3.js"></script>
+    </head>
+</html>
+
+let.js
+let a=10
+function fun(){
+    let b=20
+    console.log(a,b)
+}
+fun()
+console.log(b)
+z.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="let.js"></script>
+    </head>
+</html>
+
+l2.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="let2.js">
+        </script>
+    </head>
+    <body></body>
+</html>
+let2.js
+let a=10
+function fun3(){
+    let a=9
+    console.log(a)
+}
+fun3()
+console.log(a)
+
+b.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="block.js"></script>
+    </head>
+</html>
+block.js
+function fun2(){
+    var b=5
+    if (b>4) {
+        let a=1
+        console.log(a)
+    }
+    console.log(a)
+}
+fun2()
+
+error.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="t.js">
+        </script>
+    </head>
+    <body></body>
+</html>
+t.js
+console.log(a)
+let a=10
+
+primitive.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var a="hello"
+            var b=23
+            var c=true
+            var d=undefined
+            var e=null
+            document.write(typeof(a)+"<br>")
+            document.write(typeof(b)+"<br>")
+            document.write(typeof(c)+"<br>")
+            document.write(typeof(d)+"<br>")
+            document.write(typeof(e)+"<br>")
+        </script>
+    </head>
+</html>
+
+nonprimitive.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const person={firstname:"abc",
+                            lastname:"xyz",
+                            age:28}
+            document.write(person.firstname)
+            document.write(person["lastname"])
+        </script>
+        <script>
+            const fruits=['g','m','w']
+            let a=fruits.length
+            console.log(a)
+            let b=fruits[0]
+            console.log(b)
+            let c=fruits[fruits.length-1]
+            console.log(c)
+        </script>
+    </head>
+</html>
+
+29/12/2025
+operator.js
+function fun(a,b,...c){
+    console.log(a)
+    console.log(b)
+    console.log(c)
+}
+fun(1,2,3,4,5)
+o.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="operator.js"></script>
+    </head>
+</html>
+
+spread.js
+const arr=[2,1]
+const arr1=[3,4,5]
+const narr=[arr,arr1]
+const narr1=[...arr,...arr1]
+console.log(narr)
+console.log(narr1)
+console.log(...narr)
+console.log(...narr1)
+console.log(Math.min(narr1))
+var obj={...narr1}
+console.log(obj)
+s.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="spread.js"></script>
+    </head>
+</html>
+
+os.js
+function fun(a,b,...c)
+{
+    console.log(`${a} ${b}`)
+    console.log(c)
+    console.log(c[0])
+    console.log(c.length)
+    console.log(c.indexOf('xyz'))
+    console.log(c.indexOf('abc'))
+}
+fun('abc','mno','pqr','xyz','ufo')
+ops.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="os.js"></script>
+    </head>
+</html>
+
+dp.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fun(a,b){
+                let add=a+b
+                return
+            }
+            console.log(fun(2,3))
+        </script>
+        <script>
+            function fun(a,b){
+                return a+b
+            }
+            console.log(fun(2,3))
+        </script>
+        <script>
+            function fun(a,b){
+                return a+b
+            }
+            console.log(fun(2))   
+            /* Not a Number (NaN)*/
+        </script>
+        <script>
+            function fun(a,b=10){
+                return a+b
+            }
+            console.log(fun(2))   
+        </script>
+        <script>
+            function fun(a,b=10){
+                return a+b
+            }
+            console.log(fun(2,3))   
+        </script>
+        <script>
+            function fun(a,b=10){
+                return a+b
+            }
+            console.log(fun(2,undefined))   
+        </script>
+    </head>
+</html>
+
+alert.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function warn(){
+                alert("I am alert box.")
+                document.write("I apper after alert.")
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="alert button" onclick="warn()">
+    </body>
+</html>
+
+confirm.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fun(){
+                var data=confirm("Do you agree?")
+                if(data==true){
+                    alert("user agreed")
+                }
+                else{
+                    alert("user disagreed")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="alert button" onclick="fun()">
+    </body>
+</html>
+
+prompt.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function funP(){
+                const data=prompt("Enter Details",'username')
+                document.write(`username:${data}`)
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="alert button" onclick="funP()">
+    </body>
+</html>
+
+style.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fun(background,text,size='10px',style='italic'){
+                i=document.getElementById('a')
+                i.style.color=text
+                i.style.background=background
+                i.style.fontSize=size
+                i.style.fontStyle=style
+            }
+        </script>
+    </head>
+    <body>
+        <p id="a" >Hello</p>
+        <input type="Submit" onclick="fun('tomato','cyan')">
+    </body>
+</html>
+
+Task4.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function fun(){
+                alert('Welcome User')
+                var data=confirm("Do you want to continue?")
+                if(data==true){
+                    const data=prompt("Enter your name:")
+                    document.writeln(`Hello ${data}`)
+                    var age=prompt("Enter your age:")
+                    if(age>=18){
+                        document.writeln("You are an adult!")
+                    }
+                    else{
+                        document.writeln("You are a minor!")
+                    }
+                }
+                else{
+                    alert("Goodbye")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="alert button" onclick="fun()">
+    </body>
+</html>
+
+Task3.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function registerUser(){
+                let username
+                let pass
+                while (username=="" || username==undefined || username==null){
+                    username=prompt("Enter your name:")
+                }
+                while (pass==null || pass==undefined || pass.length<8){
+                    pass=prompt("Enter 8-digit password:")
+                }
+                let data=confirm("Are you sure you want to register with this username and password?")
+                if (data==true){
+                    alert("Successfully registraed by "+username+" and "+pass)
+                }
+                else{
+                    alert("Registration Canceled.")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="register button" onclick="registerUser()">
+    </body>
+</html>
+
+Task1.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            const students = [
+                { name: 'Alice', scores: { math: 85, science: 90, history: 78 } },
+                { name: 'Bob', scores: { math: 92, science: 88, history: 95 } },
+                { name: 'Charlie', scores: { math: 70, science: 75, history: 80 } },
+                { name: 'Diana', scores: { math: 95, science: 98, history: 93 } }
+            ];
+            function topstudent(){
+                let fobj={}
+                let maxavg=0;
+                for (const s of students){
+                    const avg=(s.scores.math+s.scores.science+s.scores.history)/3;
+                    if (avg>maxavg){
+                        maxavg=avg
+                        fobj={
+                            name: s.name , 
+                            average: avg.toFixed(2)
+                        };
+                    }
+                }
+            return fobj;
+            }
+            const tops=topstudent(students);
+            console.log(tops)
+        </script>
+    </head>
+</html>
+
+extra.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let a=23.45239
+            console.log(a.toFixed(2))
+            console.log(isNaN("hello"))
+            console.log(isNaN(23))
+            console.log(parseInt("45.80"))
+            console.log(parseFloat("45.89"))
+            let m=[70,80,90]
+            for (let [index,value] of m.entries()){
+                console.log(index+":"+value)
+            }
+        </script>
+    </head>
+</html>
