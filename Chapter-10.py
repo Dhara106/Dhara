@@ -14,7 +14,7 @@
 # - streamlit with charts.
 
 # 31/12/2025
-# 1. plot
+# ## 1. plot
 
 # In[1]:
 
@@ -232,7 +232,7 @@ plt.plot(y,ls="-.",linewidth=10,color='pink')
 plt.show()
 
 
-# (i). Multiple lines
+# ### (i). Multiple lines
 
 # In[43]:
 
@@ -272,7 +272,7 @@ plt.grid(c='g',ls='-')            # you can also write grid(axis='x') & grid(axi
 plt.show()
 
 
-# ## Subplot
+# ### (ii). Subplot
 # - format(row,col,number)
 
 # In[62]:
@@ -377,7 +377,7 @@ plt.tight_layout()
 plt.show()
 
 
-# 2. Scatter plot
+# ## 2. Scatter plot
 # 
 
 # In[84]:
@@ -448,6 +448,273 @@ y=10*np.array([random.randint(0,100,size=(50))])
 sizes2=10*np.array([random.randint(0,100,size=(50))])
 colors=10*np.array([random.randint(0,100,size=(50))])
 plt.scatter(x,y,c=colors,s=sizes2)
+plt.show()
+
+
+# 2/1/2026
+# ## 3. Bar Chart - bar()
+
+# In[1]:
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.array(['A','B','C','D'])
+y=np.array([3,8,1,10])
+plt.bar(x,y)
+plt.show()
+
+
+# In[2]:
+
+
+plt.barh(x,y)
+plt.show()
+
+
+# In[4]:
+
+
+plt.bar(x,y,color='darkblue',width=0.4)
+plt.show()
+
+
+# In[5]:
+
+
+plt.barh(x,y,color='darkblue',width=0.4)
+plt.show()
+
+
+# In[7]:
+
+
+plt.barh(x,y,color='darkblue',height=0.4)
+plt.show()
+
+
+# ## 4. Histogram
+# - histogram is a graph showing frequency distribution.
+# - it shows the number of observations within each given interval.
+# 
+
+# In[8]:
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.array([1,1,2,3,3,3,3,4,4,5,7,8,8,9,10,10])
+plt.hist(x)
+plt.show()
+
+
+# In[11]:
+
+
+plt.hist(x,bins=5)
+plt.show()
+
+
+# In[14]:
+
+
+plt.hist(x,orientation='horizontal')
+plt.show()
+
+
+# In[20]:
+
+
+x=np.random.randint(1,100,size=(50))
+print(x)
+plt.hist(x,bins=[0,10,20,30,40,50,60,70,80,90,99])        
+# bins only allowed incresing order it does not allow decrese in between increasing numbers or flow
+plt.show()
+
+
+# ## 5. Area plot
+
+# In[23]:
+
+
+x=range(1,6)
+y=[1,4,6,8,4]
+plt.fill_between(x,y)
+plt.show()
+
+
+# In[24]:
+
+
+plt.fill_between(x,y,color='skyblue',alpha=0.5)
+plt.show()
+
+
+# In[26]:
+
+
+plt.fill_between(x,y,color='skyblue',alpha=0.5)
+plt.plot(x,y,color='blue',alpha=0.8)
+plt.show()
+
+
+# ### Area fill between two lines
+
+# In[35]:
+
+
+time=np.arange(12)
+income=np.array([5,9,6,6,10,7,6,4,4,5,6,4])
+expense=np.array([6,6,8,3,6,9,7,8,6,6,4,8])
+plt.plot(time,income,color='green')
+plt.plot(time,expense,color='red')
+plt.fill_between(time,income,expense,where=(income>expense),color='green',alpha=0.25,label='positive',interpolate='True')
+plt.fill_between(time,income,expense,where=(income<=expense),color='red',alpha=0.25,label='negative',interpolate='True')
+plt.legend()
+plt.show()
+
+
+# In[39]:
+
+
+# stacked area chart
+x=range(1,6)
+y1=[1,4,6,8,4]
+y2=[2,2,7,10,12]
+y3=[2,8,5,10,6]
+plt.stackplot(x,y1,y2,y3,labels=['A','B','C'],colors=['blue','green','red'])
+plt.legend(loc='upper left') #it shows or adjust the position of labels
+plt.show()
+
+
+# In[42]:
+
+
+x=range(1,6)
+y1=[2,2,2,2,2]
+y2=[2,2,2,2,2]
+y3=[2,2,2,2,2]
+plt.stackplot(x,y1,y2,y3,colors=['yellow','red','black'])
+plt.title("Germany")
+plt.axis('off')
+plt.show()
+
+
+# ## 6. Pie Chart
+
+# In[43]:
+
+
+y=np.array([35,25,25,15])
+plt.pie(y)
+plt.show()
+
+
+# In[45]:
+
+
+y=np.array([35,25,25,15])
+plt.pie(y,startangle=90)
+plt.show()
+
+
+# In[46]:
+
+
+y=np.array([35,25,25,15])
+mylabels=['Apple','Banana','Cherry','Dates']
+plt.pie(y,labels=mylabels)
+plt.show()
+
+
+# In[57]:
+
+
+y=np.array([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1])
+plt.pie(y,colors=['blue','white'])
+plt.show()
+
+
+# In[61]:
+
+
+y=np.array([25,25,25,25])
+mylabels=['Apple','Banana','Cherry','Dates']
+myexplode=[0,0,0,0.2]
+plt.pie(y,labels=mylabels,explode=myexplode)
+plt.show()
+
+
+# In[63]:
+
+
+y=np.array([35,25,25,15])
+mylabels=['Apple','Banana','Cherry','Dates']
+myexplode=[0,0,0,0.2]
+mycolors=['black','blue','yellow','brown']
+plt.pie(y,labels=mylabels,explode=myexplode,colors=mycolors)
+plt.show()
+
+
+# In[67]:
+
+
+y=np.array([35,25,25,15])
+plt.figure(figsize=(10,10))
+mylabels=['Apple','Banana','Cherry','Dates']
+myexplode=[0,0,0,0.2]
+mycolors=['green','blue','yellow','brown']
+plt.pie(y,labels=mylabels,explode=myexplode,colors=mycolors)
+plt.legend(title='Four Fruits')
+plt.title("Pie chart")
+plt.show()
+
+
+# In[71]:
+
+
+y=np.array([35,25,25,15])
+mylabels=['Apple','Banana','Cherry','Dates']
+myexplode=[0,0,0,0.2]
+mycolors=['green','blue','yellow','brown']
+plt.pie(y,labels=mylabels,explode=myexplode,colors=mycolors,radius=1)
+plt.legend(title='Four Fruits')
+plt.title("Pie chart")
+plt.show()
+
+
+# In[77]:
+
+
+y=np.array([35,25,25,15])
+plt.figure(figsize=(10,10))
+mylabels=['Apple','Banana','Cherry','Dates']
+myexplode=[0,0,0,0.2]
+mycolors=['green','blue','yellow','brown']
+plt.pie(y,labels=mylabels,explode=myexplode,colors=mycolors,radius=1,autopct="%1.1f%%")   
+# in autopct 1.1 means after point there is only one digit allowed f means flot
+plt.legend(title='Four Fruits',loc='upper right')
+plt.title("Pie chart")
+plt.show()
+
+
+# In[125]:
+
+
+plt.figure(figsize=(8,6))
+x=['A']
+y1=[2]
+y4=np.array([1]*48)
+plt.subplot(3,1,1)
+plt.barh(x,y1,color='orange',height=10)
+plt.axis('off')
+plt.title("Indian Flag")
+plt.subplot(3,1,2)
+plt.pie(y4,colors=['blue','white'],radius=1.8)
+plt.subplot(3,1,3)
+plt.barh(x,y1,color='green',height=10)
+plt.axis('off')
+
 plt.show()
 
 
