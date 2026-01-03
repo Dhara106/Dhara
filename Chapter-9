@@ -1,0 +1,368 @@
+1/1/2026
+basic.html
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p id="a" onclick="fun()">Hello</p>
+        <!-- <button >Click</button> -->
+        <script>
+            function fun(){
+                /*let i=document.getElementById('a')
+                i.innerHTML="<b>Welcome 2026</b>"
+                i.innerText="<b>Welcome 2k26</b>"*/
+                let b=document.querySelector('#a')
+                b.innerHTML="<b >Welcome 2026</b>"
+            }
+        </script>
+    </body>
+</html>
+
+class.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p class="b">Hello</p>
+        <p class="b">Hii</p>
+        <button onclick="fun2()">Click</button>
+        <script>
+            function fun2(){
+                let i=document.getElementsByClassName('b')
+                for(let p of i){
+                    p.innerHTML="How are you?"
+                }
+            }
+        </script>
+    </body>
+</html>
+
+query.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <p class="b">Hello</p>
+        <p class="b">Hii</p>
+        <button onclick="fun2()">Click</button>
+        <script>
+            function fun2(){
+                let i=document.querySelectorAll('.b')
+                for(let p of i){
+                    p.innerHTML="Welcome 2k26"
+                    p.style.color="tomato";
+                    p.style.backgroundColor="cyan";
+                    
+                }
+            }
+        </script>
+    </head>
+</html>
+
+Task.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <p> I am outside div</p>
+        <div>
+            <p>I am Inside div</p>
+            <h4>I am heading</h4>
+        </div>
+        <button onclick="fun()">Change</button>
+        <script>
+            function fun(){
+                let i=document.querySelector("div p")
+                i.style.color='red'
+                i.style.textTransform="upperCase"
+            }
+        </script>
+    </head>
+</html>
+
+image.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <img id="a">
+        <button onclick="fun3()">
+            All Image
+        </button>
+        <script>
+            function fun3(){
+                let i=document.getElementById("a") /*it only gives last variable value as output*/
+                i.setAttribute("src","img.jfif")
+                i.setAttribute("src","images.jfif")
+                i.setAttribute("src","insect.jfif")
+                i.setAttribute("src","nature.jfif")
+            }
+        </script>
+    </body>
+</html>
+
+geta.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="a" title="Special case">ABC</p>
+        <script>
+            /*alert(document.getElementById('a').getAttribute('title'))*/
+            alert(document.getElementById('a').removeAttribute('title'))
+            alert(document.getElementById('a').getAttribute('title'))
+            console.log(x)
+        </script>
+    </body>
+</html>
+
+task2.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="a">Hello</p>
+        <button onclick="fun4()">Toggle</button>
+        <script>
+            function fun4(){
+                const i=document.querySelector('#a')
+                if(i.style.color=='tomato'){
+                    i.style.color="black"
+                }
+                else{
+                    i.style.color="tomato"
+                }
+            }
+        </script>
+    </body>
+</html>
+
+task3.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <img src="images.jfif" onclick="fun4()" id="b" >
+        <input type="button" value='Zoom Out' onclick="fun4()" id="Zoom">
+        <script>
+            function fun4(){
+                i=document.querySelector('#b')
+                z=document.querySelector("#Zoom")
+                if(z.value==='Zoom Out'){
+                    z.value='Zoom In'
+                }
+                else{
+                    z.value='Zoom Out'
+                }
+            }    
+        </script>
+    </body>
+</html>
+
+Eventhandling.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p onclick="this.innerHTML='Welcome'">Hello</p>
+        
+        <p id='b' onclick="fun(this)">Hello</p>
+        <script>
+            function fun(e){
+                e.innerHTML="Welcome"
+            }
+        </script>
+    </body>
+</html>
+
+3/1/2026
+eventlistener.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo" onclick="show()">Hello</p>
+        <script>
+            i=document.querySelector("#demo")
+            function show(){
+                alert("Event Bind or Click")
+                i=addEventListener('Click',show)
+            }
+        </script>
+    </body>
+</html>
+
+mouse.html
+<!DOCTYPE html>
+<!-- onclick, onmouseover, onmouseout, onmouseup, onmousedown -->
+<html>
+    <body>
+        <div onmouseover="this.style.color='tomato'">Hello</div>        
+        <!-- javascript -->
+        <div onmouseout="this.style.backgroundColor='cyan'">Hi</div>
+        <div onmousedown="fun(this)" onmouseup="fun2(this)" style="height: 100px; width: 100px; background-color: pink;"></div>
+        <!-- -->
+        <script>
+            function fun(e){
+                e.innerHTML='on Button press'
+                e.style.backgroundColor='cyan'
+            }
+            function fun2(e){
+                e.innerHTML='on Button release'
+                e.style.backgroundColor='tomato'
+            }
+        </script>
+    </body>
+</html>
+
+keyboard.html
+<!DOCTYPE html>
+<!-- onkeyup, onkeydown, onkeypress -->
+<html>
+    <body onkeydown="fun(this)" onkeyup="fun2(this)">
+        <script>
+            function fun(e){
+                e.bgColor='cyan'
+            }
+            function fun2(e){
+                e.bgColor='tomato'
+            }
+            /*when you click on any key then the color changes, when you write onkeypress it change the color when any alphabate or printed key pressed*/
+        </script>
+    </body>
+</html>
+
+taskkm.html
+<!DOCTYPE html>
+<!-- write a task to perform following task events
+1. if mouse is over heading it should turn yellow if mouse goes out it should turn black
+2. if button named find time is clicked then show date and time information
+3. if button named red is click then background color of body should turn red and button named green is clicked then backgorund color should turn green -->
+<html>
+    <body id="b">
+        <h1 onmouseover="fun(this)" onmouseout="fun2(this)">Welcome</h1>
+        <p id="a"></p>
+        <button onclick="fun3()" value="Find Time" id="date&time">Find Time</button>
+        <p>
+        <button onclick="fun4()" value="red" id="color">Red</button>
+        <button onclick="fun5()" value="green" id="color2">Green</button>
+        <script>
+            function fun(e){
+                e.style.color='yellow'
+            }
+            function fun2(e){
+                e.style.color='black'
+            }
+            function fun3(){
+                i=document.getElementById('a')
+                let d=new Date()
+                i.innerHTML=d
+            }
+            function fun4(){
+                i=document.getElementById('color')
+                b=document.getElementById('b')
+                b.style.backgroundColor='red'
+            }
+            function fun5(){
+                i=document.getElementById('color2')
+                b=document.getElementById('b')
+                b.style.backgroundColor='green'
+            }
+        </script>
+    </body>
+</html>
+
+form.html
+<!DOCTYPE html>
+<html>
+    <input type="text" onfocus="this.style.backgroundColor='yellow'">
+    <br>
+    <input type="text" oninput="this.value=this.value.toLowerCase()">   
+    <!-- what ever you write in ininput it always written in lower case means while you are typing if you write in capslock on then still it written in small -->
+    <br>
+    <input type="text" onchange="this.value=this.value.toUpperCase()">
+    <!-- it change after you complete writting -->
+    <br>
+    <input type="text" onblur="this.style.color='blue'">
+    <br>
+    <form action="#" onsubmit="fun()">
+        <input type="text" id="a" name="fname">
+        <input type="text" name="lname">
+        <input type="submit">
+    </form>
+    <script>
+        function fun(){
+            let data=document.getElementById('a').value
+            alert("Welcome "+data)
+        }
+    </script>
+</html>
+
+event.html
+<!DOCTYPE html>
+<!-- Event object Method:- event.target, event.button, event.type, event.key, event.preventDefault() -->
+<html>
+    <body>
+        <select onchange="fun(event)">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select>
+        <script>
+            function fun(e){
+                alert(e.target.value)
+                alert(e.target.tagName)
+                alert(e.type)
+            }
+        </script>
+    </body>
+</html>
+
+showkeybutton.html
+<!DOCTYPE html>
+<html>
+    <body onkeypress="fun2(event)">
+        <script>
+            function fun2(e){
+                alert('Key present '+e.key+"-"+e.keyCode)
+            }
+        </script>
+
+    </body>
+</html>
+
+showmousebutton.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <div onmousedown="fun2(event)" style="height: 100px; width: 100px; background-color: cyan;"></div>
+        <script>
+            function fun2(e){
+                let val=e.button
+                switch(val){
+                    case 0: alert('Left click') 
+                        break
+                    case 1: alert('Center click')
+                        break
+                    case 2: alert('Right click')
+                        break
+                    default: alert('Something went wrong')
+                        break
+                }
+            }
+        </script>
+    </body>
+</html>
+
+prevent.html
+<!DOCTYPE html>
+<html>
+    <form action="images.jfif" onsubmit="fun(event)">
+        <input type="submit">
+    </form>
+    <script>
+        function fun(e){
+            e.preventDefault()
+            /*if we not write prevent deafult then it still shows the output but after writting that it does not show output until you solve the error or empty box*/
+            alert("Will Not Allow To Submit")
+        }
+    </script>
+</html>
+
+<!-- HomeWork
+ when you press vowel it shows alert msg ex: vowel - a or not vowel --c
+ do task 6  
+ input ma khali numbers aj allowed kare
+ fix 4-digit code is submitted otherwise not allowed to submit-->
