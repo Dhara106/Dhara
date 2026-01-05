@@ -362,7 +362,185 @@ prevent.html
 </html>
 
 <!-- HomeWork
- when you press vowel it shows alert msg ex: vowel - a or not vowel --c
- do task 6  
- input ma khali numbers aj allowed kare
- fix 4-digit code is submitted otherwise not allowed to submit-->
+q-1 when you press vowel it shows alert msg ex: vowel - a or not vowel --c
+q-2 do task 6  
+q-3 input ma khali numbers aj allowed kare fix 4-digit code is submitted otherwise not allowed to submit-->
+
+4/1/2026
+number.html
+ans-3
+<!DOCTYPE html>
+<html>
+    <form onsubmit="fun(this)">
+        <input type="text" id="a" maxlength="4" >
+        <input type="submit">
+    </form>
+    <script>
+        i=document.querySelector('#a')
+        i.addEventListener("keydown",e=>{
+            if(isNaN(e.key) && e.key!='Backspace' && e.key!='Enter'){
+                e.preventDefault()
+            }
+        })
+        function fun(e){
+            var val=e.a.value
+            if(val.length==0 || val.length==1 || val.length==2 || val.length==3){
+                alert("Enter 4-digit password")
+                return false
+            }
+            alert("Submitted successfully")
+        }
+    </script>
+</html>
+
+form2.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <form name="formd" onsubmit="fun()">
+            <input type="text" name="fname" id="f1">
+            <input type="text" name="lname" id="l1">
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <script>
+            function fun(){
+                var obj=document.formd.fname.value
+                //var obj2=document.forms['formname']['fieldname'].value
+                // eg:- document.forms['formd']['fname'].value   for multiple forms
+                //var obj3=document.getElementById('id').value it is more popular then other
+                alert("Welcome "+obj)
+                var obj2=document.forms['formd']
+                alert(obj2.length)
+            }
+        </script>
+    </body>
+</html>
+
+task4.html
+<!DOCTYPE html>
+<!-- show alert with text msg if input filled is empty on clicking submit button -->
+<html>
+    <body>
+        <form onsubmit="fun(this)">
+            <input type="text" id="t1">
+            <input type="submit">
+        </form>
+        <script>
+            function fun(e){
+                var val=e.t1.value
+                if(val.length==0){
+                    alert("Fill the empty box")
+                    return false
+                }
+                alert(val)
+            }
+        </script>
+    </body>
+</html>
+
+validation.html
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="t1">
+        <input type="submit" onclick="fun()">
+        <script>
+            function fun(){
+                pat=/abc/
+                // or pat=/abc/i or =[abc] or =[^abc] or =[0-9] or =[^0-9] or=(x/y) or /^A/ or so on see in rough book
+                //it says that abc are there in input with continuous form nothing in between ex:-abchello
+                u=document.getElementById('t1').value
+                if(pat.test(u)){
+                    alert("Perfect "+u)
+                }
+                else{
+                    alert('Please enter proper value')
+                }
+            }
+        </script>
+    </body>
+</html>
+
+phno.html
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter your phone number:- 
+        <input type="text" id="pn">
+        <input type="submit" onclick="fun()">
+        <script>
+            function fun(){
+                pno=/^\d{10}$/
+                //for one char only == /^\w\D{1}/
+                u=document.getElementById("pn").value
+                if(pno.test(u)){
+                    alert('Perfect '+u)
+                }
+                else{
+                    alert("Enter proper phone number")
+                }
+            }
+        </script>
+    </body>
+</html>
+
+password.html
+<!DOCTYPE html>
+<!-- design a log in form with following validation in password field: min number of password is 8 letters 
+and it must have some special character -->
+<html>
+    <body>
+        <input type="text" id="p1">
+        <input type="submit" onclick="fun()">
+        <script>
+            function fun(){
+                pass=/\w{8,}/
+                u=document.getElementById('p1').value
+                if(pass.test(u)){
+                    alert('Perfect '+u)
+                }
+                else{
+                    alert("Enter correct password")
+                }
+            }
+        </script>
+    </body>
+</html>
+
+userpass.html
+<!DOCTYPE html>
+<!-- write a js to validate username and password; password length must be of 6 to 12 char; 
+ username should not start with _,@ and any number. Both the field must not be blanked -->
+<html>
+    <body>
+        Username: <input type="text" id="u1">
+        <br>
+        Password: <input type="password" id="p1">
+        <br>
+        <input type="submit" onclick="fun()">
+        <script>
+            function fun(){
+                user=/^_|^@|^\d/
+                //gmail=/^\w+@\w+(\.\w{2,3})+$/
+                z=document.getElementById('u1').value
+                y=document.getElementById('p1').value
+                if(y.length==0 || z.length==0){
+                    alert("Can't blank")
+                }
+                else if(y.length<6 || y.length>12){
+                    alert("Password must between 6 to 12")
+                }
+                else if(y[0]=='@' || y[0]=='_' ){
+                    alert("password not start with @ and _")
+                }
+                else{
+                    alert("Password is strong")
+                }
+                if(user.test(z)){
+                    alert("Enter valid username")
+                }
+            }
+        </script>
+    </body>
+</html>
