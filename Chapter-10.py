@@ -718,6 +718,142 @@ plt.axis('off')
 plt.show()
 
 
+# 6/1/2026
+# # Part-1 : UI Creation & Layout Fundamentals
+# ### Task 1
+# 
+
+# In[10]:
+
+
+%%writefile 1_hello.py
+import streamlit as st
+st.set_page_config(page_title='Hello Streamlit',page_icon='⚾',layout='wide')
+
+st.title("Welcome to Streamlit")
+st.header("This is header")
+st.subheader("This is subheader")
+st.text("st.text() is used for simple fixed width text.")
+st.write("st.write() is more flexible and can display text,numbers,dataframe,etc.")
+st.markdown("**st.markdown()** lets you use markdown for **rich text**")
+
+code_example="""
+def add(a,b):
+    return a+b
+result=add(5,7)
+print(result)
+"""
+
+st.code(code_example,language='python')
+
+# In[5]:
+
+
+pwd
+
+
+#  ### Task 2
+
+# In[9]:
+
+
+%%writefile 2_layout_basic.py                   
+import streamlit as st
+st.set_page_config(page_title='Faculty Profile',page_icon='👨‍🏫',layout='wide')
+
+st.title("❄Faculty Profile Demo")
+st.markdown("This example shows how to use **sidebar**,**columns** and **expanders**")
+
+st.sidebar.header("Profile Settings")
+faculty_name = st.sidebar.text_input("Faculty Name",'Tejas Thakkar')
+department = st.sidebar.selectbox('Department',['CE','IT','CSE','ATML'])
+experience = st.sidebar.slider('Years experience',0,40,10)
+st.sidebar.markdown('---')
+st.sidebar.write("You can put filters,toggles,etc in sidebar.")
+
+col1,col2 = st.columns([1,2])
+
+with col1:
+    st.subheader("Basic info")
+    st.write(f"**Name:** {faculty_name}")
+    st.write(f"**Department:** {department}")
+    st.write(f"**Experience:** {experience} years")
+
+with col2:
+    st.subheader("About")
+    st.markdown("""
+    User this area to show detailed information about the faculty member,such as research interest,publications and courses handled.""")
+    
+with st.expander("Show Courses Handled"):
+    st.write(" Pyhton-1 ")
+    st.write(" Pyhton-2 ")
+    st.write(" Digital Electronics ")
+    st.write(" PS ")
+
+with st.expander("Show Publications"):
+    st.write("1. Research Paper A (2024)")
+    st.write("2. Research Paper B (2025)")
+
+# # Part-2 : Input Widgets & Interactivity
+# ## Text Inputs
+
+# In[11]:
+
+
+%%writefile 3_text_inputs.py
+import streamlit as st
+
+st.title("Text Input Demo")
+name = st.text_input("Enter Your Name:")
+comments = st.text_area("Any Comments or Feedback? ")
+
+st.write("**Live Output**")
+if name:
+    st.write(f"Hello, **{name}** 👋")
+if comments:
+    st.write("Your Comments:")
+    st.write(comments)
+
+# # Number Inputs & Sliders
+
+# In[13]:
+
+
+%%writefile 4_number_inputs.py
+import streamlit as st
+
+st.title("Number Input & Slider Demo")
+
+age = st.number_input("Enter your age:",min_value=0,max_value=100,value=25)
+rating = st.slider("Rate this Session(1-10):",min_value=1,max_value=10,value=5)
+
+st.write(f"**Your age is:** {age}")
+st.write(f"**You Rated this Session:** {rating}/10")
+
+# # Selection Widgets
+
+# In[18]:
+
+
+%%writefile 5_selection_widgets.py
+import streamlit as st
+
+st.title("Selection Widgets Demo")
+course = st.selectbox("Select Course:",['Python-1','FSD-1','PS','DE'])
+preferred_days = st.multiselect("Preferred Days for Extra Lectures:",
+                               ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'])
+
+delivery_mode = st.radio("Preferred Delivery Mode:",
+                         ['Offline','Online','Hybrid'])
+
+subscribe = st.checkbox("Subscribe to Course updates?")
+
+st.write("---")
+st.write(f"**Course:** {course}")
+st.write(f"**Preferred Days:** {','.join(preferred_days) if preferred_days else 'None'}")
+st.write(f"**Delivery Mode:** {delivery_mode}")
+st.write(f"**Subscribed:** {'Yes' if subscribe else 'No'}")
+
 # In[ ]:
 
 
