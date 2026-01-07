@@ -854,8 +854,182 @@ st.write(f"**Preferred Days:** {','.join(preferred_days) if preferred_days else 
 st.write(f"**Delivery Mode:** {delivery_mode}")
 st.write(f"**Subscribed:** {'Yes' if subscribe else 'No'}")
 
-# In[ ]:
+7/1/2026
+%%writefile 6_Notice_Board.py
+import streamlit as st
+from datetime import date
+st.set_page_config(page_title='Notice Board',page_icon='😊',layout='wide')
+
+st.title("Notice Board")
+st.sidebar.header("Filter Notices")
+selected = st.sidebar.selectbox("Notice Category",['All','Exams','Workshops','Internship'])
+show_past = st.sidebar.checkbox("Show Past Notices:",value=True)
+
+notices=[
+    {'title':'T4 Exam Schedule','category':'Exams','date':date(2026,1,1)},
+    {'title':'Python Workshop','category':'Workshops','date':date(2026,1,5)},
+    {'title':'Internship Orientation','category':'Internship','date':date(2026,1,3)}
+]
+
+st.header('Notices')
+col1,col2 = st.columns([1,2])
+
+with col1:
+    st.subheader('Filter Applied')
+    st.write(f"Category: **{selected}**")
+    st.write(f"Include Past Notices: {show_past}")
+    
+with col2:
+    st.header('Information')
+    st.text('Below are notices after filtering.')
+    
+for notice in notices:
+    if selected != 'All' and notice['category'] != selected:
+        continue
+    with st.expander(f"{notice['title']} {notice['category']}"):
+        st.write(f"**Date** {notice['date']}")    
+        st.write("Notice Details")
 
 
+%%writefile 7_date_time_file.py
+import streamlit as st
+from datetime import date,time
+
+st.title("Date, Time & File Uploader Demo")
+
+exam_date = st.date_input("Select Exam Date:",value=date.today())
+start_time = st.time_input("Exam Start Time: ",value=time(9,0))
+
+upload_file = st.file_uploader("Upload CSV file",type=['csv'])
+st.write(f"Selected Exam Date: {exam_date}")
+st.write(f"Exam Start Time: {start_time}")
+
+if upload_file is not None:
+    st.success("File Uploaded Successfully")
+    st.write("File Name:",upload_file.name)
+    st.write("File Type:",upload_file.type)
+
+
+# Example - Buttons & Download Button
+
+%%writefile 8_button_demo.py
+import streamlit as st
+import pandas as pd
+
+st.title("Button & Download Demo")
+if st.button("Click to Generate Sample Data"):
+    df=pd.DataFrame({
+        'Enrollment No':[1,2,3,4,5],
+        'Marks':[90,95,80,70,85]
+    })
+    st.write("Generated Data")
+    st.dataframe(df)
+    csv = df.to_csv(index=False).encode('utf-8')
+    st.download_button(label='Download as CSV',data=csv,
+                       file_name='sample.csv',mime='text/csv')
+
+
+# Part-3 : Output Display & Matplotlib Integration
+
+%%writefile 9_display_data.py
+import streamlit as st
+import pandas as pd
+
+st.title("Displayind Data in Streamlit")
+
+data={
+    'Students':['A','B','C','D'],
+    'Marks':[85,92,76,34],
+    'Passed':[True,True,True,False]
+}
+
+df = pd.DataFrame(data)
+st.subheader("st.dataframe(interactive)")
+st.dataframe(df)
+
+st.subheader("st.table(static)")
+st.table(df)
+
+st.subheader("st.json(Structured JSON)")
+st.json(data)
+
+
+## Example - Media Display
+
+%%writefile 10_media_display.py
+import streamlit as st
+st.title("Meida Display Demo")
+
+st.subheader("Image Example")
+st.image("python.jpg",use_container_width=True)
+
+st.subheader('Audio Example')
+st.audio('fresh-457883.mp3')
+
+st.subheader('Video Example')
+st.video('samplevideo.mp4')
+
+
+## Example - Status & Progress
+
+%%writefile 11_status_demo.py
+import streamlit as st
+import time
+
+st.title("Status Element Demo")
+
+st.success("This is Success Message")
+st.warning("This is Warning Message")
+st.error("This is Error Message")
+st.info("Useful Information can go here")
+
+st.write("---")
+
+st.subheader("Progress & Spinner Example")
+if st.button("Start Long Task"):
+    progress=st.progress(0)
+    with st.spinner("Processing..."):
+        for i in range(100):
+            time.sleep(0.03)
+            progress.progress(i+1)
+    st.success("Task Completed")
+
+
+## Example - Basic Matplotlib Charts
+
+%%writefile 12_matplotlib_basic.py
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
+
+st.title("Matplotlib + Streamlit Demo")
+
+x=np.arange(1,11)
+y=np.random.randint(50,100,size=10)
+
+#------------
+# Line Chart
+#------------
+st.subheader("Line Chart (Matplotlib)")
+plt.figure(figsize=(6,4))
+plt.plot(x,y,marker='o')
+plt.xlabel("Students index")
+plt.ylabel("Marks")
+plt.title("Marks of 10 students")
+st.pyplot(plt)
+
+plt.clf()   # it helps to overcome with overlapping of graphs, clf means clear the figure
+
+#-----------
+# Bar Chart
+#-----------
+
+st.subheader("Bar Chart (Matplotlib)")
+plt.figure(figsize=(6,4))
+plt.bar(x,y)
+plt.xlabel("Students index")
+plt.ylabel("Marks")
+plt.title("Marks in Bar Chart")
+st.pyplot(plt)
 
 
