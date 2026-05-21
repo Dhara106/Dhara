@@ -7,4 +7,5 @@ to make an app write python manage.py startapp app1,then start app2,then start a
 now go to L1 then go in settings.py then write in INSTALLED_APPS app1,app2,app3,so on as much you need
 first create then write in INSTALLED_APPS other wise it gives error
 
+all work is in vs code in python-2 folder
 -->
