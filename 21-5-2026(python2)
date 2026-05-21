@@ -1,0 +1,10 @@
+<!-- do not change the project name
+if we want to go back in previous folder then we have to write cd.. in terminal
+
+to start the project without django write in terminal == python -m django startproject L1(projectname) 
+to run the server we have to write python manage.py runserver
+to make an app write python manage.py startapp app1,then start app2,then start app3,so on as much you need
+now go to L1 then go in settings.py then write in INSTALLED_APPS app1,app2,app3,so on as much you need
+first create then write in INSTALLED_APPS other wise it gives error
+
+-->
