@@ -1,0 +1,47 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
+import './App.css'
+import Oc from './Oc'
+
+function App(){
+  return(
+    <>
+      <Oc/>
+    </>
+  )
+}
+export default App
+
+
+function Oc(){
+    const fun=()=>{
+        alert("You clicked on")
+    }
+    const fun2=()=>{
+        alert("You clicked twice")
+    }
+    const fun3=(e)=>{
+        console.log(e.target.value)
+    }
+    const fun4=(e)=>{
+        e.preventDefault()
+        alert(name)
+    }
+    return(
+        <>
+        <form onSubmit={fun4}>
+            <input type="text" onChange={fun3} name="name"/>
+            <input type="submit"/>
+        </form>
+        <br></br>
+        <button onClick={fun}>Event</button>
+        <br/>
+        <button onDoubleClick={fun2}>Event</button>
+        </>
+    )
+}
+
+export default Oc
+
