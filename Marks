@@ -1,0 +1,42 @@
+ch-7 == 13 marks  (REST API -- 3MCQ, Beautifull soup -- 1MCQ)
+ch-8 == 12 marks  6MCQ (From PB)
+6 marks-- Django
+9 marks-- BS4
+10 MCQs
+
+for offline code :--    1. how to start project
+			2. create app
+			3. player_name,run,email,birthdate,innings
+			4. search by each field
+			5. only write models.py & view.py
+
+1. python -m django startproject player
+2. python manage.py startapp app1
+
+4. search_term=request.GET.get('search')
+	if search_term:
+		players=player.objects.filter(Name_icontains=search_term)
+3.,5. 
+models.py
+	class player(models.Model):
+		name=models.Charfield(max_length=35)
+		run=models.IntegerField()
+		email=models.EmailField(max_length=254)
+		birthdate=models.DateField(auto_now=False)
+		inning=models.IntegerField()
+view.py
+	from cricket.models import player
+	def home(request):
+		player_name=request.GET.get('player_name')
+		run=request.GET.get('run')
+		email=request.GET.get('email')
+		birthdate=request.GET.get('birthdate')
+		inning=request.GET.get('inning')
+		players=player.object.all()
+		if name:
+			players=player.objects.filter(player_name_icontains=name)
+		if score:
+		if email:
+		if birthdate:
+		if inning:
+	return render(request,'home.html',{'p',players})
