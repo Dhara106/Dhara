@@ -1,0 +1,58 @@
+cmd 
+// >mongosh
+// test>
+// test> show dbs (To check existed db)
+// test> use dbname create/use database
+// ex:- use lj2k26
+
+// lj2k26>db.dropDatabase()  [to delete db]
+
+// lj2k26>db.createCollection('Collectionname')
+// ex:-db.createCollection('mydata')
+
+// >show collections
+
+// >db.Collectionname.drop()  [to delete Collection]
+// ex:-db.mydata.drop()
+
+// >db.oldname.renameCollection('newname')
+// ex:-db.mydata.renameCollection('Hi')
+
+// create --> db.Collectionname.insertOne/Many()
+// ex:- db.data.insertOne({name:'abc',age:20})
+// db.data.insertMany([{name:'pqr',age:20,status:'Active'},{name:'xyz',age:22},{name:'mno',age:8,status:'Active',city:'Abad'},{name:'abc',age:8},{name:'opr'}])
+
+// read --> db.Collectionname.find(query,Projection)
+// db.data.find()
+// db.data.find({name:'abc'})
+// db.data.find({},{name:1})
+// db.data.find({},{name:1,_id:0})
+// db.data.find({status:'Active'},{name:1,age:1})
+// db.data.findOne({name:'abc'})
+
+// db.data.find({name:'abc'}).limit(1).skip(1)
+
+// db.data.find({name:'abc'}).count()
+
+// db.data.find().sort({age:-1})
+
+// Update
+// db.data.updateOne/Many(filter,document,option)
+// ex:- db.data.updateOne({name:'abc'},{$set:{name:'lmn',no:22}})
+// db.data.updateOne({name:'hi'},{$set:{name:'oh',age:200}},{upsert:true})   [update+insert=upsert]
+// if i don't found the record the for update and insert we use upsert flag
+
+// Delete
+// db.data.deleteOne/Many()
+// db.data.deleteOne({name:'mno'})
+// db.data.deleteMany({status:'Active'})
+
+// Logical operator
+// $and/$or/$nor --> db.Collectionname.find({Logical.operator:[{},{}]})
+// ex:-db.data.find({$or:[{name:'p1',age:22}]})
+
+// Conditional operation
+// $eq,$neq,$gt,$gte,$lt,$lte,$in:[10,18],$nin:[10,18]
+// .find({field:{co:value}})
+// db.data.find({field:{$not:{Conditional.operator:value}}})
+// ex:-db.data.find({age:{$not:{$gt:20}}})
